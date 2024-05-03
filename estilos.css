@@ -78,7 +78,7 @@ a:hover{
         align-self: center;
     }
     .details{
-        align-content: center;
+        align-self: center;
     }
 
 }
@@ -94,6 +94,7 @@ a:hover{
     .details{
         justify-content: center;
         width: 300px;
+        align-self: center;
     }
     header{
         max-width: 300px;
