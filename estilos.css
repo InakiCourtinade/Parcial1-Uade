@@ -1,17 +1,32 @@
+html{
+    height: 100%;
+}
+
 body{
     margin: 0;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    
+    
+}
+header{
+    background-color: cornflowerblue;
+    text-align: center;
 }
 
 .img1{
     max-width: 300px;
     height: 350px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .containerImg1{
     display: flex;
     align-items: center;
+    margin-left: -180px;
 }
 .containerText{
     display: flex;
@@ -19,15 +34,19 @@ body{
     justify-content: space-around;
     align-items: normal;
     padding: 21px;
+    /* margin-left: -100px; */
 }
 .details{
     max-width: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-left: -400px;
+    /* justify-content: center; */
 }
 p{
     font-weight: bold;
+    margin: 0;
 }
 p span{
     font-weight: 100;
@@ -63,23 +82,39 @@ a:hover{
     color: red;
 
 }
-@media(max-width:950px){
+footer{
+    background-color: cornflowerblue;
+    margin-top: auto;
+    
+}
+@media(max-width:1030px){
     .details{
-        max-width: 300px;
+        max-width: 400px;
+        margin: auto;
+        height: 350px;
+    }
+    .containerImg1{
+        margin: auto;
     }
     
 }
-@media(max-width:720px){
+@media(max-width:735px){
     .containerText{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin:auto
     }
     .containerImg1{
         align-self: center;
+        margin-bottom: 5px;
     }
     .details{
         align-self: center;
+        max-width: 330px;
+    }
+    .details div{
+        margin-bottom: 5px;
     }
 
 }
@@ -93,13 +128,13 @@ a:hover{
         justify-content: center;
     }
     .details{
-        justify-content: center;
-        width: 300px;
+        width: 250px;
         align-self: center;
-    }
-    header{
-        max-width: 300px;
-        display: flex;
-        justify-content: center;
-    }
+        margin-top: 10px;
+}.img1{
+    max-width: 200px;
+    height: 330px;
+    border-radius: 10px;
+}
+
 }
