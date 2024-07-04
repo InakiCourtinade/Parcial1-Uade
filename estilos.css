@@ -134,9 +134,16 @@ footer{
         align-self: center;
         margin-top: 10px;
 }.img1{
-    max-width: 200px;
+    max-width: 240px;
     height: 330px;
     border-radius: 10px;
+}
+.title{
+    max-width: 230px;
+}
+header{
+    display: flex;
+    justify-content: center;
 }
 
 }
